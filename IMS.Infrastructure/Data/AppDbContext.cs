@@ -16,6 +16,8 @@ namespace IMS.Infrastructure.Data
 
         }
 
+        public DbSet<Profile> Profiles { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
