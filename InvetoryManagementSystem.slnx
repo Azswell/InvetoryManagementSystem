@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="Application/Application.csproj" />
+  <Project Path="Application/IMS.App.csproj" />
   <Project Path="IMS.Domain/IMS.Domain.csproj" />
   <Project Path="IMS.Infrastructure/IMS.Infrastructure.csproj" />
   <Project Path="IMS.Service/IMS.Service.csproj" />

@@ -15,7 +15,8 @@ namespace Application
          
         private void LoadPrograms()
         {
-            dataGridView1.DataSource = _context.Programs;
+            dataGridView1.DataSource = _context.Programs.ToList();
+            
         }
     }
 }
