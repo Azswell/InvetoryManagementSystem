@@ -12,11 +12,11 @@ namespace IMS.Infrastructure.Data
             
         }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
-        {
-
-        }
+        { }
+        
 
         public DbSet<Profile> Profiles { get; set; }
+        public DbSet<Programs> Programs { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -28,7 +28,6 @@ namespace IMS.Infrastructure.Data
 
             optionsBuilder.ConfigureWarnings(w =>
                                              w.Ignore(RelationalEventId.PendingModelChangesWarning));
-
         }
     }
 }
